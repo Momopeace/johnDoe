@@ -1,0 +1,17 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get user.started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<div><img [src]='user.photo' [alt]="user.name"></div> 
+<p>{{user.name}}</p>
+<p>{{user.firstName}}</p>
+<p>citation :{{user.quote}}</p>
+<p *ngIf="user.hide">{{user.age}}</p>
+
+ <input type="text" [(ngModel)]="user.quote">
+<button (click)="myAge()">afficher/masquer mon age</button>
